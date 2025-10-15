@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Premium Payment Form</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="payment-card">
+        <div class="card-header">
+          <div class="plan-info">
+            <h2 class="plan-name">Premium</h2>
+            <p class="plan-desc">Faster Instagram Growth</p>
+          </div>
+          <div class="price-info">
+            <span class="price-amount">$199</span>
+            <span class="price-period">/month</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            aria-label="Email Address" />
+        </div>
+
+        <div class="field-group">
+          <input
+            type="text"
+            placeholder="Cardholder Name"
+            required
+            aria-label="Cardholder Name" />
+        </div>
+
+        <div class="field-group">
+          <div class="card-number-wrapper">
+            <input type="text" placeholder="Card Number" required />
+          </div>
+        </div>
+        <div class="date-cvv">
+          <div class="date">
+            <input type="text" name="date" placeholder="Date" />
+          </div>
+          <div class="cvv">
+            <input type="text" name="cvv" placeholder="CVV" />
+          </div>
+        </div>
+        <div class="country-zip">
+          <div class="country">
+            <select name="country" id="country">
+              <option value="georgia">Georgia</option>
+              <option value="USA">USA</option>
+              <option value="France">France</option>
+              <option value="Portugal">Portugal</option>
+            </select>
+          </div>
+          <div class="zip">
+            <input type="text" name="ZIP" placeholder="ZIP" />
+          </div>
+        </div>
+        <div>
+          <input type="text" name="dicount code" placeholder="Discount Code" />
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" class="checkbox" checked required />
+          <label for="terms">
+            I accept the
+            <a href="#" class="terms-link">Terms of Service</a> and
+            <a href="#" class="privacy-link">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button type="submit" class="submit-button">
+          Get started <span class="current-price">$199</span>
+          <span class="old-price">$249</span>
+        </button>
+
+        <div class="coupon-link-wrapper">
+          <a href="#" class="coupon-link">Have a coupon?</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
