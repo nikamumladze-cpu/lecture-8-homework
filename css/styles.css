@@ -68,10 +68,6 @@ body {
   height: 54px;
 }
 
-.card-number-wrapper {
-  position: relative;
-}
-
 .card-number-wrapper input {
   padding-right: 40px;
 }
@@ -85,6 +81,13 @@ body {
   height: 24px;
   background-color: #d9d9d9;
   border-radius: 3px;
+  background-image: url("../images/card.svg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;}
+.card-number-wrapper {
+  width: 424px;
+  height: 54px;
 }
 
 input[type="email"],
@@ -98,6 +101,9 @@ select {
   font-size: 16px;
   color: #333;
   outline: none;
+}
+.card-number-wrapper {
+  position: absolute;
 }
 .date-cvv {
   display: flex;
@@ -142,7 +148,6 @@ select {
   font-size: 14px;
   color: #888;
 }
-
 
 .checkbox-wrapper {
   display: flex;
@@ -207,6 +212,6 @@ select {
 }
 
 .checkbox-wrapper a {
-    text-decoration: underline;
-    color:#ff6b81
+  text-decoration: underline;
+  color: #ff6b81;
 }
